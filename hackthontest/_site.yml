@@ -1,0 +1,34 @@
+navbar:
+  title: "資料科學應用創新黑客松競賽"
+  type: inverse
+  right:
+    - text: "競賽說明"
+      menu: 
+        - text: "競賽緣起"
+          href: about.html
+        - text: "競賽資訊"
+          href: about.html
+        - text: "競賽規則"
+          href: about.html
+        - text: "競賽獎勵"
+          href: about.html
+        - text: "注意事項"
+          href: about.html
+    - text: "報名資訊"
+      menu: 
+        - text: "報名規則"
+          href: infor.html
+        - text: "報名流程"
+          href: infor.html
+        - text: "徵尋隊友"
+          href: infor.html
+        - text: "我要報名"
+          href: infor.html
+    - text: "更多資訊"
+      menu:
+        - text: "參考作品"
+          href: more.html
+        - text: "歷屆得獎名單"
+          href: more.html
+        - text: "臉書粉專"
+          href: more.html

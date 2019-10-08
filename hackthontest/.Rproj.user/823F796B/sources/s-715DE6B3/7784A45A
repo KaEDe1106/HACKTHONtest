@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570537576323.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "597040578",
+    "id" : "7784A45A",
+    "lastKnownWriteTime" : 1570537910,
+    "last_content_update" : 1570537910636,
+    "path" : "~/GitHub/HACKTHONtest/hackthontest/about.Rmd",
+    "project_path" : "about.Rmd",
+    "properties" : {
+        "cursorPosition" : "4,6",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
