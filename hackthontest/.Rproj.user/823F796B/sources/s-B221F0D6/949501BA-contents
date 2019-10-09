@@ -1,3 +1,4 @@
+output_dir: "."
 navbar:
   title: "資料科學應用創新黑客松競賽"
   type: inverse
