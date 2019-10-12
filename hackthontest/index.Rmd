@@ -1,9 +1,12 @@
 ---
 title: "你，黑客松了嗎?"
 ---
-
 快報名!
 
-<div id="fb-root"></div>
+
+<div class="line-it-button" data-lang="en" data-type="share-a" data-ver="3" data-url="https://tpemartin.github.io/github-website-example3/" data-color="default" data-size="small" data-count="false" style="display: none;"></div>
+ <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+ 
+ <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"></script>
-<div class="fb-share-button" data-href="https://kaede1106.github.io/HACKTHONtest/hackthontest/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkaede1106.github.io%2FHACKTHONtest%2Fhackthontest%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+ <div class="fb-share-button" data-href="https://tpemartin.github.io/github-website-example3/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftpemartin.github.io%2Fgithub-website-example3%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
