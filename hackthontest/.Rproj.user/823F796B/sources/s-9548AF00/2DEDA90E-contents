@@ -10,3 +10,21 @@ title: "你，黑客松了嗎?"
  <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"></script>
  <div class="fb-share-button" data-href="https://tpemartin.github.io/github-website-example3/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftpemartin.github.io%2Fgithub-website-example3%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+ 
+ 
+ <form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz9rQIXkDDq1thplxTYXF9RNbAzOrMmiKEsx93Fp3otRA5EREDj/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
