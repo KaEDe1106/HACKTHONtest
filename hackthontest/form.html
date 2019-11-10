@@ -12,7 +12,7 @@
 
 
 
-<title>競賽說明</title>
+<title>填寫表單</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -346,12 +346,60 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">競賽說明</h1>
+<h1 class="title toc-ignore">填寫表單</h1>
 
 </div>
 
 
-<p>獎金三萬!!</p>
+
+
+<form name='submit-to-google-sheet'>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="select1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2" name=select2>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text1"></textarea>
+  </div>
+    <button type="submit">Send</button>
+</form>
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhsuAtvL1Vm0rmQgUldajeQhtE4RiHKbEG05Jl58y4XpTML2o8/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
 
 
 

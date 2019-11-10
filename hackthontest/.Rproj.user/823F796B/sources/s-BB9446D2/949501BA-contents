@@ -24,7 +24,7 @@ navbar:
         - text: "徵尋隊友"
           href: infor.html
         - text: "我要報名"
-          href: infor.html
+          href: form.html
     - text: "更多資訊"
       menu:
         - text: "參考作品"
